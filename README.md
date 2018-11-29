@@ -1,7 +1,7 @@
 # Pravum
 
 Another game test, basically the same rules as the [pacman](https://github.com/eadwardus/pacman)
-tough this one had no time limit, and was done during the free time of the
+though this one had no time limit, and was done during the free time of the
 free time (and is not finished).
 
 #### Internal Structure
