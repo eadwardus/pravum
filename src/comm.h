@@ -1,5 +1,5 @@
 #define NELEM(a)  (sizeof((a))/sizeof((a)[0]))
-#define GETTIME() (clock() / (CLOCKS_PER_SEC / 1000))
+#define GETTIME() SDL_GetTicks()
 
 enum {
 	DYNAMIC  = 1 << 0,
@@ -21,8 +21,8 @@ typedef struct {
 	SDL_Surface **surface; /* array of surfaces */
 	int         aframe;    /* current frame     */
 	int         frame;     /* number of frames  */
-	int         time;      /* time before delay */
-	int         delay;     /* delay time        */
+	unsigned    time;      /* time before delay */
+	unsigned    delay;     /* delay time        */
 	unsigned    opts;      /* flags             */
 	int         posx;      /* position x        */
 	int         posy;      /* position y        */
