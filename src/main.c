@@ -31,7 +31,7 @@ main(void)
 	SDL_Window   *win;
 	int          n, m, i;
 
-	n = 3; /* rep */
+	n = 0;
 	m = 0;
 
 	if (SDL_Init(SDL_INIT_VIDEO|SDL_INIT_AUDIO) < 0)
